@@ -15,7 +15,7 @@
   //#define MARAUDER_V4
   //#define MARAUDER_V6
   //#define MARAUDER_V6_1
-  //#define MARAUDER_V7
+  #define MARAUDER_V7
   //#define MARAUDER_V7_1
   //#define MARAUDER_KIT
   //#define GENERIC_ESP32
@@ -25,7 +25,7 @@
   //#define MARAUDER_DEV_BOARD_PRO
   //#define XIAO_ESP32_S3
   //#define MARAUDER_REV_FEATHER
-  //#define MARAUDER_CYD_MICRO // 2432S028
+  #define MARAUDER_CYD_MICRO // 2432S028
   //#define MARAUDER_CYD_2USB // Another 2432S028 but it has tWo UsBs OoOoOoO
   //#define MARAUDER_CYD_GUITION // ESP32-2432S024 GUITION
   //#define MARAUDER_CYD_3_5_INCH
