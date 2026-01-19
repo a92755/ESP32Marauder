@@ -5,7 +5,7 @@
   #define configs_h
 
   #define POLISH_POTATO
-  #define CONFIG_IDF_TARGET_ESP32
+ // #define CONFIG_IDF_TARGET_ESP32
   //#define DEVELOPER
   
   //// BOARD TARGETS
