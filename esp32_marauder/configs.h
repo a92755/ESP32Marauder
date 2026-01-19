@@ -5,9 +5,9 @@
   #define configs_h
 
   #define POLISH_POTATO
-
+  #define CONFIG_IDF_TARGET_ESP32
   //#define DEVELOPER
-
+  
   //// BOARD TARGETS
   //#define MARAUDER_M5STICKC
   //#define MARAUDER_M5STICKCP2
