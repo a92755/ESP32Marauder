@@ -281,7 +281,7 @@ jobs:
         with:
           name: "Marauder Release ${{ github.ref_name }}"
           tag_name: ${{ env.version_dot }}
-          generate_release_notes: false
+          generate_release_notes: true
           draft: true
           files: |
             esp32_marauder_v*.bin
