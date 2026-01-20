@@ -257,7 +257,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: esp32_marauder
-          path: BUILD_DIR
+          path: "$BUILD_DIR"
           retention-days: 5
 
   post_compile_steps:
