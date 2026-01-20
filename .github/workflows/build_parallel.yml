@@ -256,8 +256,8 @@ jobs:
       - name: Upload ${{ matrix.board.name }} Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: esp32_marauder
-          path: esp32_marauder_v*.bin
+          name: ${{ env.artifact_name }}
+          path: ${{ env.artifact_path }}
           retention-days: 5
 
   post_compile_steps:
