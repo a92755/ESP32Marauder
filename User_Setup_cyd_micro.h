@@ -166,8 +166,8 @@
 
 // Marauder Mini
 /*
-#define TFT_CS   17  // Chip select control pin D8
-#define TFT_DC   16  // Data Command control pin
+#define TFT_CS   25  // Chip select control pin D8
+#define TFT_DC   26  // Data Command control pin
 #define TFT_RST  5  // Reset pin (could connect to NodeMCU RST, see next line)
 //#define TFT_MISO 19
 //#define TFT_MOSI 23
@@ -176,9 +176,9 @@
 */
 
 // ESP32 Marauder 
-#define TFT_MISO 12
-#define TFT_MOSI 13
-#define TFT_SCLK 14
+#define TFT_MISO 6
+#define TFT_MOSI 7
+#define TFT_SCLK 8
 #define TFT_CS   15  // Chip select control pin
 #define TFT_DC   2  // Data Command control pin
 #define TFT_RST   -1  // Reset pin (could connect to RST pin)
@@ -192,11 +192,11 @@
 
 // ESP32 Centauri
 /*
-#define TFT_MISO 19
-#define TFT_MOSI 23
-#define TFT_SCLK 18
-#define TFT_CS   27  // Chip select control pin
-#define TFT_DC   26  // Data Command control pin
+#define TFT_MISO 9
+#define TFT_MOSI 10
+#define TFT_SCLK 3
+#define TFT_CS   4  // Chip select control pin
+#define TFT_DC   28  // Data Command control pin
 #define TFT_RST   5  // Reset pin (could connect to RST pin)
 //#define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
 
