@@ -257,7 +257,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: esp32_marauder
-          path: ./esp32_marauder/build/esp32.esp32.${{ matrix.board.build_dir }}
+          path: BUILD_DIR
           retention-days: 5
 
   post_compile_steps:
