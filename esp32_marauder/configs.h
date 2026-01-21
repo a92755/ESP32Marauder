@@ -5,9 +5,9 @@
   #define configs_h
 
   #define POLISH_POTATO
- // #define CONFIG_IDF_TARGET_ESP32
+
   //#define DEVELOPER
-  
+
   //// BOARD TARGETS
   //#define MARAUDER_M5STICKC
   //#define MARAUDER_M5STICKCP2
@@ -83,9 +83,9 @@
     #define HARDWARE_NAME "Flipper Zero Dev Board Pro"
   #elif defined(XIAO_ESP32_S3)
     #define HARDWARE_NAME "XIAO ESP32 S3"
-  #elif defined(MARAUDER_V8)
-    #define HARDWARE_NAME "ESP32-C5 DevKit"
   #elif defined(MARAUDER_C5)
+    #define HARDWARE_NAME "ESP32-C5 DevKit"
+  #elif defined(MARAUDER_V8)
     #define HARDWARE_NAME "Marauder v8"
   #else
     #define HARDWARE_NAME "ESP32"
@@ -425,7 +425,7 @@
     //#define HAS_TEMP_SENSOR
   #endif
 
-  #ifdef MARAUDER_C5
+  #ifdef MARAUDER_V8
     #define HAS_TOUCH
     //#define HAS_FLIPPER_LED
     //#define FLIPPER_ZERO_HAT
@@ -1080,7 +1080,7 @@
       #define KIT_LED_BUILTIN 13
     #endif
 
-    #if defined(MARAUDER_C5)
+    #if defined(MARAUDER_V8)
       #define CHAN_PER_PAGE 7
 
       #define SCREEN_CHAR_WIDTH 40
@@ -1838,7 +1838,7 @@
     //#define BUTTON_ARRAY_LEN 5
   #endif
 
-  #if defined(MARAUDER_C5)
+  #if defined(MARAUDER_V8)
     #define BANNER_TIME 100
     
     #define COMMAND_PREFIX "!"
@@ -2150,8 +2150,8 @@
       #define SD_CS 10
     #endif
 
-    #ifdef MARAUDER_C5
-     // #define SD_CS 10
+    #ifdef MARAUDER_V8
+      #define SD_CS 10
     #endif
 
   #endif
@@ -2274,7 +2274,7 @@
     #elif defined(MARAUDER_CYD_3_5_INCH)
       #define PIN 22
     #elif defined(MARAUDER_C5)
-     // #define PIN 27
+      #define PIN 27
     #elif defined(MARAUDER_V8)
       #define PIN 27
     #else
@@ -2367,9 +2367,9 @@
       #define GPS_TX 6
       #define GPS_RX 9
     #elif defined(MARAUDER_C5)
-      // #define GPS_SERIAL_INDEX 1
-      // #define GPS_TX 14
-      // #define GPS_RX 13
+      #define GPS_SERIAL_INDEX 1
+      #define GPS_TX 14
+      #define GPS_RX 13
     #elif defined(MARAUDER_V8)
       #define GPS_SERIAL_INDEX 1
       #define GPS_TX 14
@@ -2474,7 +2474,7 @@
   #elif defined(MARAUDER_REV_FEATHER)
     #define MARAUDER_TITLE_BYTES 13578
   #elif defined(MARAUDER_C5)
-   // #define MARAUDER_TITLE_BYTES 13578
+    #define MARAUDER_TITLE_BYTES 13578
   #elif defined(MARAUDER_V8)
     #define MARAUDER_TITLE_BYTES 13578
   #else
@@ -2529,13 +2529,13 @@
       #define SD_SCK       18
     #endif
 
-    #ifdef MARAUDER_V8
+    #ifdef MARAUDER_C5
       #define SD_MISO 2
       #define SD_MOSI 7
       #define SD_SCK  6
     #endif
 
-    #ifdef MARAUDER_C5
+    #ifdef MARAUDER_V8
       #define SD_MISO TFT_MISO
       #define SD_MOSI TFT_MOSI
       #define SD_SCK  TFT_SCLK
