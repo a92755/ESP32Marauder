@@ -84,7 +84,7 @@
   #elif defined(XIAO_ESP32_S3)
     #define HARDWARE_NAME "XIAO ESP32 S3"
   #elif defined(MARAUDER_C5)
-    #define HARDWARE_NAME "ESP32-C5 DevKit"
+    #define HARDWARE_NAME "Marauder v8"
   #elif defined(MARAUDER_V8)
     #define HARDWARE_NAME "Marauder v8"
   #else
@@ -425,7 +425,7 @@
     //#define HAS_TEMP_SENSOR
   #endif
 
-  #ifdef MARAUDER_V8
+  #ifdef MARAUDER_C5
     #define HAS_TOUCH
     //#define HAS_FLIPPER_LED
     //#define FLIPPER_ZERO_HAT
